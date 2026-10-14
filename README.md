@@ -1,4 +1,5 @@
 初始製作 WPF 小畫家：
+
     1. WPF 主視窗介面佈局（Layout Container）
         ○ DockPanel 應用：作為視窗主要架構，將選單與工具列固定於上方（DockPanel.Dock="Top"）、狀態列固定於下方（DockPanel.Dock="Bottom"），並由 Canvas 自動填滿中間繪圖區域。
         ○ Canvas 繪圖畫布：作為放置與繪製圖形元件的容器，提供絕對座標與繪圖環境。

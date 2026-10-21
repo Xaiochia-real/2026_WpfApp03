@@ -10,7 +10,7 @@
     2. 繪圖與工具功能 (Drawing & Tools)
         ● 多種向量圖形繪製：
             ○ 支援繪製 直線 (Line)、矩形 (Rectangle)、橢圓 (Ellipse) 與 多折線 (Polyline)。
-        ●樣式與色彩控制：
+        ● 樣式與色彩控制：
             ○ 引入第三方套件 Extended WPF Toolkit 的 ColorPicker，支援自訂 筆刷色彩 (Stroke) 與 填滿色彩 (Fill)。
             ○ 透過 Slider 控制項調整 筆刷粗細 (Thickness)。
         ● 畫布編輯與清除：

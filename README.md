@@ -16,3 +16,5 @@
         ● 畫布編輯與清除：
             ○ 橡皮擦模式 (Eraser)：點擊圖形元件即可透過 MyCanvas.Children.Remove() 將該圖形刪除。
             ○ 一鍵清空 (Clear)：執行 MyCanvas.Children.Clear() 快速清除畫布上的所有圖形。
+
+橡皮擦功能會出bug，但目前懶的修復了...

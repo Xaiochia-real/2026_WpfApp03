@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_2026_WpfApp03"
         mc:Ignorable="d"
-        Title="WPF小畫家ver1" Height="450" Width="800">
+        Title="WPF小畫家ver2" Height="589" Width="1057">
     <DockPanel>
         <Menu DockPanel.Dock="Top" Height="30">
             <MenuItem Header="檔案" VerticalAlignment="Center" FontSize="16" FontWeight="Bold">
@@ -25,36 +25,39 @@
             </ToolBar>
             <ToolBar Height="38" Width="600" Background="#FFA8D684">
                 <RadioButton Height="35" Width="35" FontSize="16" Checked="ShapeButton_Checked" FontWeight="Bold" Tag="Line">
-                    <Image Source="C:\Users\owner\source\repos\2026_WpfApp03\img\line.png"/>
+                    <Image Source="C:\Users\owner\source\repos\Xaiochia\2026_WpfApp03\2026_WpfApp03\line.png"/>
                 </RadioButton>
                 <RadioButton Height="35" Width="35" FontSize="16" Checked="ShapeButton_Checked" FontWeight="Bold" Tag="Rectangle">
-                    <Image Source="C:\Users\owner\source\repos\2026_WpfApp03\img\Rectangle.png"/>
+                    <Image Source="C:\Users\owner\source\repos\Xaiochia\2026_WpfApp03\2026_WpfApp03\rectangle.png"/>
                 </RadioButton>
                 <RadioButton Height="35" Width="35" FontSize="16" Checked="ShapeButton_Checked" FontWeight="Bold" Tag="Ellipse">
-                    <Image Source="C:\Users\owner\source\repos\2026_WpfApp03\img\Ellipse.png"/>
+                    <Image Source="C:\Users\owner\source\repos\Xaiochia\2026_WpfApp03\2026_WpfApp03\ellipse.png"/>
                 </RadioButton>
                 <RadioButton Height="35" Width="35" FontSize="16" Checked="ShapeButton_Checked" FontWeight="Bold" Tag="Polyline">
-                    <Image Source="C:\Users\owner\source\repos\2026_WpfApp03\img\Polyline.png"/>
+                    <Image Source="C:\Users\owner\source\repos\Xaiochia\2026_WpfApp03\2026_WpfApp03\polyline.png"/>
                 </RadioButton>
+				<Separator/>
+				<RadioButton Height="35" Width="35" Tag="Eraser" Click="EraserButton_Click">
+					<Image Source="C:\Users\owner\source\repos\Xaiochia\2026_WpfApp03\2026_WpfApp03\eraser.png"/>
+				</RadioButton>
+				<RadioButton Height="35" Width="35" Tag="Trashcan" Click="ClearButton_Click">
+					<Image Source="C:\Users\owner\source\repos\Xaiochia\2026_WpfApp03\2026_WpfApp03\trashcan.png"/>
+				</RadioButton>
             </ToolBar>
         </ToolBarTray>
         <StatusBar Height="35" Background="LightGray" DockPanel.Dock="Bottom">
-            <StatusBarItem Width="200">
+            <StatusBarItem Width="400">
                 <Label x:Name="StatusLabel" Content="Ready" VerticalAlignment="Center" FontSize="14" Width="150" Margin="10,0,0,0"/>
             </StatusBarItem>
-
             <Separator/>
-
             <StatusBarItem Width="200">
                 <Label x:Name="ShapeLabel" Content="形狀" VerticalAlignment="Center" FontSize="14" Width="150" Margin="10,0,0,0"/>
             </StatusBarItem>
-
             <Separator/>
-
             <StatusBarItem Width="200">
                 <Label x:Name="ColorLabel" Content="色彩" VerticalAlignment="Center" FontSize="14" Width="150" Margin="10,0,0,0"/>
             </StatusBarItem>
         </StatusBar>
-        <Canvas Background="#FFF5F5E7"/>
+        <Canvas x:Name="MyCanvas" Background="#FFF5F5E7" MouseEnter="MyCanvas_MouseEnter" MouseLeftButtonDown="MyCanvas_MouseLeftButtonDown" MouseMove="MyCanvas_MouseMove" MouseLeftButtonUp="MyCanvas_MouseLeftButtonUp"/>
     </DockPanel>
 </Window>
